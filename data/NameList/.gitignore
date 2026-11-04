@@ -1,0 +1,4 @@
+# 运行期生成的名单文件（原版 CStringListManager 的落盘目录）
+# 名单本身不入库，只保留目录
+*
+!.gitignore

@@ -1,0 +1,37 @@
+--
+thread = 2
+socket_thread = 1
+
+-- cpath 指向 C 模块目录
+cpath = "./bin/cservice/?.dll"
+-- lua C 模块加载路径（skynet.core、bson、md5、lpeg 等）
+lua_cpath = "./bin/luaclib/?.dll"
+-- lua 服务加载路径
+luaservice = "./service/?.lua"
+lualoader = "./lualib/loader.lua"
+pkgfile = "./Engine.dm"
+lua_path = "./lualib/?.lua;./lualib/?/init.lua;./service/?.lua;./game/?.lua;./game/?/init.lua;./?.lua"
+
+-- 启动引导
+bootstrap = "snlua bootstrap"
+start = "main"
+
+-- 节点标识与集群
+harbor = 0
+address = "127.0.0.1:2526"
+master = "127.0.0.1:2013"
+
+-- 外网IP
+public_ip = "127.0.0.1"
+
+-- 单节点调试时可打开；多节点必需 master
+standalone = nil
+
+-- 日志与调试台
+daemon = nil
+logger = nil
+logpath = "./log"
+logservice = "logger"
+profile = false
+debug_console = "127.0.0.1:7359"
+
