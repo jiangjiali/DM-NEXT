@@ -170,7 +170,7 @@ function M.takeupgrade(player)
 	local goto_page = nil
 	local close = false
 	if ((player:upgrade_weapon_take() and 1 or 0)) ~= 0 then
-		say = say .. "就这样了,我尽我最大努力锤炼了你的武器,结果是否<成功/@success>\\"
+		say = say .. "就这样了,我尽我最大努力锤炼了你的武器,结果是否成功\\"
 		say = say .. "只有在你使用过一次后才知道，出去试试吧。\\\\"
 		say = say .. "<退出/@exit>\\"
 	else

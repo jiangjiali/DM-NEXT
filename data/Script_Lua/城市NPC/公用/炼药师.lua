@@ -27,7 +27,8 @@ function M.main(player)
 	say = say .. "我们道士啊，就是心灵手巧。想当年我是有名的药师呢！\\"
 	say = say .. "对了，你来炼什么东西啊？ \\"
 	say = say .. "<可接任务/@_RW_entry>\\"
-	say = say .. "<制作物品/@buy>\\"
+	say = say .. "<制造毒药/@makepoison>\\"
+	say = say .. "<购买物品/@buy>\\"
 	say = say .. "<出售物品/@sell>\\"
 	say = say .. "<炼药说明/@炼药说明>\\"
 	say = say .. "<制偶说明/@制偶说明>\\"
@@ -45,6 +46,15 @@ function M._RW_entry(player)
 	if ((player:task_step(15) == 1 and 1 or 0)) ~= 0 or ((player:task_step(15) == 2 and 1 or 0)) ~= 0 or ((player:task_step(21) == 1 and 1 or 0)) ~= 0 then
 		ScriptEngine.call(player, "鱼人的阴谋任务", "海角_炼药")
 	end
+	return { say = say, page = goto_page, close = close }
+end
+
+function M.makepoison(player)
+	local say = ""
+	local goto_page = nil
+	local close = false
+	say = say .. "开始制造毒药，快选择要制造的毒药吧。\\\\"
+	say = say .. "<返 回/@main>"
 	return { say = say, page = goto_page, close = close }
 end
 

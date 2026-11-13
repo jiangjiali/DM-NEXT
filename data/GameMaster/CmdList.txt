@@ -16,7 +16,7 @@
 (0)Searching=Searching
 (0)允许频道=EnableChannel
 (0)禁止频道=DisableChannel
-(0)退出行会=QuitGuild
+(0)退出门派=QuitGuild
 (0)允许联盟=AllowAlly
 (0)联盟=BuilDally
 (0)取消联盟=BreakAlly

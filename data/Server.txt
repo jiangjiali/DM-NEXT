@@ -46,7 +46,7 @@ RandomUpgradeItemRate = 10
 CharInfoBackupTime = 30
 DbUpdateDelay= 2000
 DbMaxSavePerWindow=50
-MaxUpgradeTimes = 5
+MaxUpgradeTimes = 7
 MongenFactor = 100
 PkCurseRate = 50
 GuildWarTime = 10800
@@ -68,13 +68,6 @@ WeaponDawnRate4 = 5
 WeaponDawnRate5 = 5
 WeaponDawnRate6 = 5
 WeaponDawnRate7 = 5
-WeaponSLuckyRate1 = 90
-WeaponSLuckyRate2 = 15
-WeaponSLuckyRate3 = 15
-WeaponSLuckyRate4 = 3
-WeaponSLuckyRate5 = 3
-WeaponSLuckyRate6 = 2
-WeaponSLuckyRate7 = 1
 
 [Name]
 GoldName = ½ð±Ò
